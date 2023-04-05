@@ -1,0 +1,37 @@
+
+commit 2c32972704566f5d3d9264c5fed1938ea540c1c9 (HEAD -> master, origin/master, origin/bug3, bug3)
+Author: damceskiandrej <127520269+damceskiandrej@users.noreply.github.com>
+Date:   Wed Apr 5 19:07:54 2023 +0200
+
+    Fix method sumEvenNumbers
+
+commit b7d59ab1e4284ce97fbe8734afc81b131d8b3a19
+Merge: 280d17c ba1e1cf
+Author: damceskiandrej <127520269+damceskiandrej@users.noreply.github.com>
+Date:   Wed Apr 5 19:09:33 2023 +0200
+
+    Merge branch 'bug2'
+
+commit ba1e1cf5b91e12dbb1bf9101b5fe8c33cb3f04a7 (origin/bug2, bug2)
+Author: damceskiandrej <127520269+damceskiandrej@users.noreply.github.com>
+Date:   Wed Apr 5 19:03:41 2023 +0200
+
+    Fix wrong condition in filterOddNumbers
+
+commit 280d17ce0b1ee6ff450057cf2bd98234a6dab5c4 (origin/bug1, bug1)
+Author: damceskiandrej <127520269+damceskiandrej@users.noreply.github.com>
+Date:   Wed Apr 5 19:02:25 2023 +0200
+
+    Fix wrong loop for reading
+
+commit fc67cd2b27af19efad73797bacb7eaf663f50e7d
+Author: damceskiandrej <127520269+damceskiandrej@users.noreply.github.com>
+Date:   Wed Apr 5 19:00:03 2023 +0200
+
+    Add java class
+
+commit 68a5b372fc4031a0013a986880791361397ccbef
+Author: damceskiandrej <127520269+damceskiandrej@users.noreply.github.com>
+Date:   Wed Apr 5 18:57:44 2023 +0200
+
+    Initial commit

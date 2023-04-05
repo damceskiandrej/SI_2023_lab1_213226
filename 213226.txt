@@ -1,0 +1,91 @@
+4.Со командата mkdir се создава фајлот SI_2023_lab1_213226 и за да пристапам до него ја користам командата cd.Дополнително ќе мора на новосоздадениот фајл да направиме git init со што 
+  фајлот ќе биде git локално repo. 
+  C:\Users\38976>mkdir SI_2023_lab1_213226
+
+C:\Users\38976>cd
+C:\Users\38976
+
+C:\Users\38976>git init
+Reinitialized existing Git repository in C:/Users/38976/.git/
+
+C:\Users\38976>cd SI_2023_lab1_213226
+
+C:\Users\38976\SI_2023_lab1_213226>git init
+Initialized empty Git repository in C:/Users/38976/SI_2023_lab1_213226/.git/
+5.За да се поврзе локалниот репозиториум со оддалечениот репозиториум се користи командата git remote add origin заедно со линкот до remote repo. 
+C:\Users\38976\SI_2023_lab1_213226>git remote add origin https://github.com/damceskiandrej/SI_2023_lab1_213226.git
+6. Додавање на README.md, негово commit и поставување на порака:
+C:\Users\38976\SI_2023_lab1_213226>echo "# SI_2023_lab1_213226" >> README.md
+
+C:\Users\38976\SI_2023_lab1_213226>git init
+Reinitialized existing Git repository in C:/Users/38976/SI_2023_lab1_213226/.git/
+
+C:\Users\38976\SI_2023_lab1_213226>git add README.md
+
+C:\Users\38976\SI_2023_lab1_213226>git commit -m "Initial commit"
+[master (root-commit) 19f723e] Initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md 
+7.Да се додаде фајлот SILab1.java се користи командата C:\Users\38976\SI_2023_lab1_213226>echo. > SILab1.java,откако ќе се копира содржината се користи git add . и за да се комитне и да се додаде порака се пишува командата C:\Users\38976\SI_2023_lab1_213226>git commit -m "Add java class".
+8.За да се синхронизираат сите гранки се користи командата C:\Users\38976\SI_2023_lab1_213226>git push --all.
+9.За да ги отвориме трите гранки ги користиме следниве команди:
+C:\Users\38976\SI_2023_lab1_213226>git branch bug1
+
+C:\Users\38976\SI_2023_lab1_213226>git branch bug2
+
+C:\Users\38976\SI_2023_lab1_213226>git branch bug3
+10.Префрлување на гранката bug1 се прави со командата C:\Users\38976\SI_2023_lab1_213226>git checkout bug1.
+11.За да се поправи грешката во bug1 и да се додаде порака откако ќе се комитне пишуваме:
+C:\Users\38976\SI_2023_lab1_213226>git add .
+
+C:\Users\38976\SI_2023_lab1_213226>git commit -m "Fix wrong loop for reading"
+[bug1 280d17c] Fix wrong loop for reading
+ 1 file changed, 1 insertion(+), 1 deletion(-) 
+12.Префрлување на гранката bug2 се прави со командата C:\Users\38976\SI_2023_lab1_213226>git checkout bug2
+13.За да се поправи грешката во bug2 и да се додаде порака откако ќе се комитне пишуваме:
+C:\Users\38976\SI_2023_lab1_213226>git add .
+
+C:\Users\38976\SI_2023_lab1_213226>git commit -m "Fix wrong condition in filterOddNumbers"
+[bug2 ba1e1cf] Fix wrong condition in filterOddNumbers
+ 1 file changed, 1 insertion(+), 1 deletion(-) 
+14.Префрлување на гранката bug3 се прави со командата C:\Users\38976\SI_2023_lab1_213226>git checkout bug3
+15.За да се поправи грешката во bug3 и да се додаде порака откако ќе се комитне пишуваме:
+C:\Users\38976\SI_2023_lab1_213226>git add .
+
+C:\Users\38976\SI_2023_lab1_213226>git commit -m "Fix method sumEvenNumbers"
+[bug3 166308e] Fix method sumEvenNumbers
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+16.Гранките со оддалечениот репозиториум се синхронизираат со командата C:\Users\38976\SI_2023_lab1_213226>git push --all
+17.Кон гранката master се префрлуваме со командата:
+C:\Users\38976\SI_2023_lab1_213226>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+18.Спојувањето на гранката bug1 кон master се врши со командата: 
+C:\Users\38976\SI_2023_lab1_213226>git merge bug1
+Updating fc67cd2..280d17c
+Fast-forward
+ SILab1.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-) 
+19.Синхронизацијата се овозможува со командата C:\Users\38976\SI_2023_lab1_213226>git push --all
+20.Спојувањето на гранката bug2 кон master се врши со командата: 
+C:\Users\38976\SI_2023_lab1_213226>git merge bug2
+Auto-merging SILab1.java
+Merge made by the 'ort' strategy.
+ SILab1.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+21. Синхронизацијата се овозможува со командата C:\Users\38976\SI_2023_lab1_213226>git push --all
+22.Префрлување на гранката bug3 се прави со командата C:\Users\38976\SI_2023_lab1_213226>git checkout bug3
+23.Rebase спрема гранката master се прави со командата:
+C:\Users\38976\SI_2023_lab1_213226>git rebase master
+Successfully rebased and updated refs/heads/bug3. 
+24.Кон гранката master се префрлуваме со командата:
+ C:\Users\38976\SI_2023_lab1_213226>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'. 
+25.Спојувањето на bug3 кон master се прави со командите C:\Users\38976\SI_2023_lab1_213226>git checkout master , C:\Users\38976\SI_2023_lab1_213226>git merge bug3
+26.Синхронизацијата се спроведува со командата C:\Users\38976\SI_2023_lab1_213226>git push --all --force
+27.Досегашните логови ги добиваме со командата C:\Users\38976\SI_2023_lab1_213226>git log, креираме text file во кој нив ги пишуваме и кон локалниот фајл заедно со документацијата ги додаваме двата фајлови.
+28.Последниот чекор се воспоставува со командата git push --all
+
+
+     
